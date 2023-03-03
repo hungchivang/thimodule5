@@ -24,6 +24,10 @@ export class TourService {
     return this.http.delete<any>("http://localhost:3000/tours/" + id );
   }
 
+  showDetail(id : number):Observable<Tour>{
+    return this.http.get<Tour>("http://localhost:3000/tours/" + id );
+  }
+
   edit(id: number,tour: Tour):Observable<Tour>{
     return this.http.put<Tour>("http://localhost:3000/tours/" + id,tour);
   }

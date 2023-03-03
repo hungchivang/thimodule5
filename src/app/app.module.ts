@@ -9,6 +9,7 @@ import { DeleteComponent } from './tour/delete/delete.component';
 import { CreateComponent } from './tour/create/create.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { ShowtourComponent } from './tour/showtour/showtour.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
     ShowComponent,
     EditComponent,
     DeleteComponent,
-    CreateComponent
+    CreateComponent,
+    ShowtourComponent
   ],
   imports: [
     BrowserModule,
